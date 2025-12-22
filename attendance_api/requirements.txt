@@ -1,0 +1,4 @@
+chalice
+SQLAlchemy>=2.0
+PyMySQL>=1.1
+marshmallow>=3.21
