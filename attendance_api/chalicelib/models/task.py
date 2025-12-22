@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 class Task(Base):
     """タスクの情報を表示"""
 
-    __table__ = "tasks"
+    __tablename__ = "tasks"
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(String(150), nullable=False)
     detail: Mapped[str] = mapped_column(Text, nullable=True)
