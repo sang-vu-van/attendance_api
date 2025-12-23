@@ -2,11 +2,11 @@ from datetime import datetime
 from typing import TYPE_CHECKING
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, ForeignKey, DateTime, func
-from chalicelib.models.base import Base
+from chalicelib.domain.models.base import Base
 
 if TYPE_CHECKING:
-    from chalicelib.models.user import User
-    from chalicelib.models.task import Task
+    from chalicelib.domain.models.user import User
+    from chalicelib.domain.models.task import Task
 
 
 class Project(Base):

@@ -80,7 +80,7 @@ def update_user(user_id):
     db = SessionLocal()
     try:
         user = db.get(User, id)
-        if not User:
+        if not user:
             return json_error("not found", 404)
         if "username" in data:
             user.username = data["username"]
