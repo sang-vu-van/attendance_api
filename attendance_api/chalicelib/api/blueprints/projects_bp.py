@@ -42,7 +42,7 @@ def create_project():
         db.close
 
 
-@bp_projects.route("/users", methods=["GET"])
+@bp_projects.route("/projects", methods=["GET"])
 def list_project():
     """
     list_project の API

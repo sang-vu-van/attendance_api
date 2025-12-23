@@ -46,7 +46,7 @@ def list_users():
         db.close()
 
 
-@bp_users.route("/users/{user_id}", methods="GET")
+@bp_users.route("/users/{user_id}", methods=["GET"])
 def get_user(user_id):
     """
     get_user by ID API

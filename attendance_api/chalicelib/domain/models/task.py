@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import TYPE_CHECKING
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, Text, ForeignKey, DateTime, func
-from chalicelib.models.base import Base
+from chalicelib.domain.models.base import Base
 
 if TYPE_CHECKING:
     from chalicelib.models.project import Project
